@@ -1,0 +1,76 @@
+apply plugin: 'com.android.library'
+apply plugin: 'me.tatarka.retrolambda'
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+
+    // 移除lint检查的error
+    lintOptions {
+        abortOnError false
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.orhanobut:logger:1.11'
+    //    compile 'com.android.support:percent:+'
+    //http://www.fresco-cn.org/docs/index.html#_
+    compile 'com.facebook.fresco:fresco:0.8.0'
+    compile 'com.facebook.fresco:imagepipeline-okhttp:0.8.0'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    //    compile 'com.github.rey5137:material:1.2.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    //compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.squareup.okio:okio:1.6.0'
+    //https://github.com/blipinsk/RecyclerViewHeader
+    //    compile 'com.bartoszlipinski.recyclerviewheader:library:1.2.0'
+    //    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.7.0-rc2'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'oro:oro:2.0.8'
+    compile 'com.soundcloud.android:android-crop:1.0.1@aar'
+}
+
+retrolambda {
+    javaVersion JavaVersion.VERSION_1_7
+}
+//apply from:'https://github.com/xufengAndroid/config/raw/master/gradle-mvn-push.gradle'
+dependencies {
+    compile 'org.freemarker:freemarker:2.3.22'
+}

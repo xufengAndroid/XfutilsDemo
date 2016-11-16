@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    http://www.uisdc.com/comprehensive-material-design-note
+    字体
+    英文字体使用Roboto，中文字体使用Noto。
+    Roboto有6种字重：Thin、Light、Regular、Medium、Bold 和 Black。
+    Noto有7种字重：Thin, Light、DemiLight、Regular、Medium、Bold 和 Black。
+
+    文字排版
+    常用字号：
+
+    12sp 小字提示
+    14sp（桌面端13sp） 正文/按钮文字
+    16sp（桌面端15sp） 小标题
+    20sp Appbar文字
+    24sp 大标题
+    34sp/45sp/56sp/112sp 超大号文字
+    长篇幅正文，每行建议60字符（英文）左右。短文本，建议每行30字符（英文）左右。
+    -->
+    <!--12sp 小字提示-->
+
+    <dimen name="x_font_small">12sp</dimen>
+    <dimen name="x_font_body">14sp</dimen>
+    <dimen name="x_font_smalltitle">16sp</dimen>
+    <dimen name="x_font_appbar">20sp</dimen>
+    <dimen name="x_font_bigtitle">24sp</dimen>
+    <dimen name="x_font_big34">34sp</dimen>
+    <dimen name="x_font_big45">45sp</dimen>
+    <dimen name="x_font_big56">56sp</dimen>
+    <dimen name="x_font_big112">112sp</dimen>
+
+
+    <!--
+    所有可操作元素最小点击区域尺寸：48dp X 48dp。
+
+    栅格系统的最小单位是8dp，一切距离、尺寸都应该是8dp的整数倍。以下是一些常见的尺寸与距离：
+
+    顶部状态栏高度：24dp
+    Appbar最小高度：56dp
+    底部导航栏高度：48dp
+    悬浮按钮尺寸：56x56dp/40x40dp
+    用户头像尺寸：64x64dp/40x40dp
+    小图标点击区域：48x48dp
+    侧边抽屉到屏幕右边的距离：56dp
+    卡片间距：8dp
+    分隔线上下留白：8dp
+    大多元素的留白距离：16dp
+    屏幕左右对齐基线：16dp
+    文字左侧对齐基线：72dp
+        -->
+    <!-- Appbar最小高度：56dp -->
+    <dimen name="x_appbarMinHeight">56dp</dimen>
+    <!-- 底部导航栏高度：48dp-->
+    <dimen name="x_bottombarHeight">48dp</dimen>
+    <!--悬浮按钮尺寸：56x56dp/40x40dp-->
+    <dimen name="x_suspend_button56">56dp</dimen>
+    <!--悬浮按钮尺寸：56x56dp/40x40dp-->
+    <dimen name="x_suspend_button40">40dp</dimen>
+    <!--用户头像尺寸：64x64dp/40x40dp-->
+    <dimen name="x_user_header64">64dp</dimen>
+    <!--用户头像尺寸：64x64dp/40x40dp-->
+    <dimen name="x_user_header40">40dp</dimen>
+    <!--屏幕左右对齐基线：16dp-->
+    <dimen name="x_screen_lr">16dp</dimen>
+    <!-- 大多元素的留白距离：16dp-->
+    <dimen name="x_dividerHeight">16dp</dimen>
+    <!--  卡片间距：8dp-->
+    <dimen name="x_card_space">8dp</dimen>
+
+</resources>

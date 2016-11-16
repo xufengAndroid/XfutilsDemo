@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--12%   A:27-->
+    <color name="font_black_dividers">#1b000000</color>
+    <!--26%  A:58-->
+    <color name="font_black_disabled">#3a000000</color>
+    <!--26%  A:58-->
+    <color name="font_black_hint_text">#3a000000</color>
+    <!--54%  A:121-->
+    <color name="font_black_secondary_text">#79000000</color>
+    <!--54%  A:121-->
+    <color name="font_black_icons">#79000000</color>
+    <!--87%  A:196-->
+    <color name="font_black_text">#c4000000</color>
+
+
+    <!--12%   A:27-->
+    <color name="font_white_dividers">#1bffffff</color>
+    <!--30%  A:67-->
+    <color name="font_white_disabled">#43ffffff</color>
+    <!--26%  A:58-->
+    <color name="font_white_hint_text">#43ffffff</color>
+    <!--70%  A:157-->
+    <color name="font_white_secondary_text">#9dffffff</color>
+    <!--100%  A:225-->
+    <color name="font_white_icons">#ffffffff</color>
+    <!--100%  A:225-->
+    <color name="font_white_text">#ffffffff</color>
+
+</resources>
